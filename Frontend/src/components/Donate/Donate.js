@@ -51,7 +51,7 @@ const Donate = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:5000/donate", {
+      const response = await fetch("https://blood-donate-backend-hy1d.onrender.com/donate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
