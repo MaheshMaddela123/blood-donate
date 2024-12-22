@@ -1,0 +1,84 @@
+.volunteer-hub {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #d32f2f;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  .training-modules ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .module-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .module-item h3 {
+    margin: 0;
+  }
+  
+  button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .certificate {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #4caf50;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .certificate h2 {
+    color: #4caf50;
+  }
+  
+  .download-link {
+    color: #fff;
+    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .download-link:hover {
+    background-color: #388e3c;
+  }
+  
+  .resources ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resources li {
+    margin-bottom: 10px;
+  }
+  
+  .resources a {
+    text-decoration: none;
+    color: #d32f2f;
+  }
+  
+  .resources a:hover {
+    text-decoration: underline;
+  }
+  

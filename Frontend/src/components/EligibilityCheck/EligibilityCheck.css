@@ -1,0 +1,117 @@
+.eligibility-check {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .eligibility-check h1 {
+    color: #b22222;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .eligibility-check h1:hover {
+    color: #a01c1c;
+    transform: scale(1.05);
+  }
+  
+  .eligibility-info {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    animation: slideIn 0.8s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .eligibility-info ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .proceed-button, .back-button {
+    background-color: #b22222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .proceed-button:hover, .back-button:hover {
+    background-color: #a01c1c;
+    transform: scale(1.1);
+  }
+  
+  .back-button {
+    background-color: #555;
+  }
+  
+  .back-button:hover {
+    background-color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .eligibility-check h1 {
+      font-size: 1.5rem;
+    }
+  
+    .eligibility-info {
+      font-size: 0.9rem;
+    }
+  
+    .proceed-button, .back-button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .eligibility-check h1 {
+      font-size: 1.2rem;
+    }
+  
+    .eligibility-info {
+      font-size: 0.85rem;
+    }
+  
+    .proceed-button, .back-button {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  }
+  

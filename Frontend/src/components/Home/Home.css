@@ -1,0 +1,117 @@
+/* Background Section */
+.home {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.welcome-section {
+  background-image: url('https://www.careinsurance.com/upload_master/media/posts/July2022/donating-blood-here-s-everything-you-need-to-know.jpg'); /* Your image URL */
+  background-size: cover; /* Ensure the background image covers the full width */
+  background-position: center; /* Center the image */
+  color: tomato;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  z-index: 2; /* Ensure text appears on top of the background */
+  position: relative; /* Position text above background */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.welcome-section h1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* If you are adding an <img> tag inside the welcome section */
+.welcome-section img {
+  width: 100%; /* Ensure the image takes the full width */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position it behind other content */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure image stays behind text */
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  flex-wrap: wrap; /* Allows the cards to stack on smaller screens */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  color: #b71c1c;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #b71c1c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #e53935;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 80px 0; /* Reduce padding for smaller screens */
+  }
+
+  .welcome-section h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center; /* Center align cards on mobile */
+    padding: 0 20px; /* Add some padding to the sides */
+    width: 100%;
+  }
+
+  .card {
+    width: 100%; /* Cards take up full width on small screens */
+    margin-bottom: 1.5rem; /* Add spacing between stacked cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section h1 {
+    font-size: 2rem; /* Further reduce font size on very small screens */
+  }
+
+  .learn-more {
+    padding: 0.5rem 1.2rem; /* Slightly larger padding for the button */
+  }
+}
