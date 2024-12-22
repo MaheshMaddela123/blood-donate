@@ -25,7 +25,7 @@ const DonorList = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/donors?${queryParams.toString()}`
+        `https://blood-donate-backend-hy1d.onrender.com/donors?${queryParams.toString()}`
       );
 
       console.log("Response Status:", response.status);
